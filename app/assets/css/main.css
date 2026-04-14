@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --color-brand-50: #f7e9eb;
+  --color-brand-100: #efd6dc;
+  --color-brand-200: #e6b7c1;
+  --color-brand-300: #d89bab;
+  --color-brand-400: #c57d95;
+  --color-brand-500: #5c4a73;
+  --color-brand-600: #4b3b60;
+  --color-brand-700: #3a2c4d;
+  --color-brand-800: #2a1e3a;
+  --color-brand-950: #210c40;
+
+  --color-brand-bg: var(--color-brand-50);
+  --color-brand-primary: var(--color-brand-950);
+  --color-brand-accent: var(--color-brand-200);
+  --color-brand-muted: var(--color-brand-500);
+
+  --color-primary-50: var(--color-brand-50);
+  --color-primary-100: var(--color-brand-100);
+  --color-primary-200: var(--color-brand-200);
+  --color-primary-300: var(--color-brand-300);
+  --color-primary-400: var(--color-brand-400);
+  --color-primary-500: var(--color-brand-500);
+  --color-primary-600: var(--color-brand-600);
+  --color-primary-700: var(--color-brand-700);
+  --color-primary-800: var(--color-brand-800);
+  --color-primary-900: var(--color-brand-950);
+  --color-primary-950: var(--color-brand-950);
+}
+
+@layer base {
+  :root {
+    --ui-primary: var(--color-brand-950);
+    --ui-bg: var(--color-brand-50);
+    --ui-text: var(--color-brand-950);
+  }
+
+  .dark {
+    --ui-primary: var(--color-brand-200);
+    --ui-bg: var(--color-brand-950);
+    --ui-text: var(--color-brand-50);
+
+    --ui-primary-foreground: var(--color-brand-950);
+  }
+
+  body {
+    @apply bg-brand-bg text-brand-primary dark:bg-brand-950 dark:text-brand-bg transition-colors duration-300;
+  }
+}
+
+@font-face {
+  font-family: "Anurati";
+  src: url("@/assets/fonts/Anurati-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+.logo-font {
+  @apply text-xl tracking-[0.2em] font-extralight uppercase;
+
+  font-family: "Anurati", sans-serif !important;
+}
+
+.logo-sub {
+  @apply text-[12px] tracking-[0.4em]   uppercase mt-1 ;
+   font-family: "Anurati", sans-serif !important;
+}
+html {
+  cursor: url('~/assets/images/logo.png'), auto;
+}
+
+a, button, [role="button"], .cursor-pointer {
+  cursor: url('~/assets/images/logo.png'), pointer;
+}
