@@ -71,6 +71,8 @@ html {
   cursor: url('~/assets/images/logo.png'), auto;
 }
 
-a, button, [role="button"], .cursor-pointer {
+/* a, button, [role="button"], .cursor-pointer {
   cursor: url('~/assets/images/logo.png'), pointer;
 }
+
+*/
