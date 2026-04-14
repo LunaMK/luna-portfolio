@@ -30,9 +30,6 @@
   "pnpm": {
     "neverBuiltDependencies": [
       "better-sqlite3"
-    ],
-    "onlyBuiltDependencies": [
-      "sharp"
     ]
   }
 }
