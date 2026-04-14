@@ -5,7 +5,7 @@
         <h2
           class="text-4xl md:text-5xl font-black text-slate-800 dark:text-slate-100 uppercase tracking-tighter"
         >
-          Technical <span class="text-primary-500 italic">Arsenal</span>
+          Technical <span class="text-primary-500 italic">Skills</span>
         </h2>
         <div
           class="mt-2 h-2 w-32 bg-primary-500 underline decoration-wavy opacity-80"

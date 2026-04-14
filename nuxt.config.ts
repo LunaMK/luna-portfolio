@@ -23,7 +23,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui',
     '@nuxt/content',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxthub/core'
   ],
   colorMode: {
     preference: 'system',
@@ -47,4 +48,5 @@ export default defineNuxtConfig({
       }
     }
   }
+  
 })
