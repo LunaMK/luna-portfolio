@@ -26,5 +26,13 @@
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.1"
   },
-  "packageManager": "pnpm@10.26.1"
+  "packageManager": "pnpm@10.26.1",
+  "pnpm": {
+    "neverBuiltDependencies": [
+      "better-sqlite3"
+    ],
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  }
 }
