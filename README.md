@@ -3,7 +3,7 @@
 A modern and responsive personal portfolio showcasing my experience as a **Full Stack Developer** with a specialization in **Artificial Intelligence**. The website highlights my professional journey, technical skills, and selected projects.
 
 ## 🚀 Live Demo
-🔗 https://your-portfolio-link.com
+🔗 https://luna-portfolio-ef8.pages.dev/
 
 ## 👩‍💻 About Me
 I am a Full Stack Developer graduated with honors in Artificial Intelligence. Currently working at **Spacetoon**, I specialize in building scalable **mobile-first applications** using **Flutter**, along with modern web platforms developed with **Nuxt.js** and robust backend systems powered by **Laravel**. I also participated in the **ACM International Collegiate Programming Contest (ICPC)**, which strengthened my analytical and problem-solving skills.
