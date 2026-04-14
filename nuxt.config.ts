@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     },
   },
   hub: {
-    db: "sqlite", 
+    db: "sqlite",
   },
   nitro: {
     experimental: {
