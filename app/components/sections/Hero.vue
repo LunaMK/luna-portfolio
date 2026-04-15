@@ -1,13 +1,15 @@
 <template>
   <section
-    class="relative min-h-[calc(100vh-64px)] flex items-center overflow-hidden py-16"
+    class="relative py-12 md:py-16 md:min-h-[100dvh] flex items-center overflow-hidden"
   >
     <div
       class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,var(--color-brand-200)_0%,transparent_50%)] dark:bg-[radial-gradient(circle_at_top_right,_var(--color-brand-950)_0%,_transparent_50%)] opacity-20"
     ></div>
 
     <UContainer>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start md:items-center"
+      >
         <div class="space-y-8 text-center lg:text-left">
           <div class="space-y-6">
             <UBadge
@@ -44,15 +46,23 @@
             class="flex flex-wrap items-center justify-center lg:justify-start gap-4"
           >
             <UButton
+              to="#projects"
+              size="xl"
+              color="primary"
+              label="View Projects"
+              icon="i-lucide-layout-grid"
+              class="rounded-xl px-8 py-4 shadow-lg shadow-primary-500/10 hover:shadow-primary-500/25 transition-all hover:-translate-y-0.5 font-bold"
+            />
+            <UButton
               to="/Luna_Marzouk_CV.pdf"
               target="_blank"
               size="xl"
+              variant="outline"
               color="primary"
               label="Download CV"
               icon="i-lucide-download"
-              class="rounded-xl px-8 py-4 shadow-lg shadow-primary-500/10 hover:shadow-primary-500/25 transition-all hover:-translate-y-0.5 font-bold"
+              class="rounded-xl px-8 py-4 font-bold"
             />
-
             <UButton
               size="xl"
               variant="ghost"
