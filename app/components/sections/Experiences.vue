@@ -1,22 +1,13 @@
 <template>
-  <section id="experience" class="py-24 overflow-x-hidden">
+  <section
+    id="experience"
+    class="py-16 sm:py-24 overflow-x-hidden"
+  >
     <UContainer>
-      <div class="mb-16">
-        <h2
-          class="text-4xl md:text-5xl font-black text-slate-800 dark:text-slate-100 uppercase tracking-tighter"
-        >
-          Experience
-        </h2>
-        <div
-          class="mt-2 h-2 w-32 bg-primary-500 underline decoration-wavy opacity-80"
-        ></div>
-        <p
-          class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-4 font-medium leading-relaxed"
-        >
-          Developing scalable web and mobile applications through clean code and
-          thoughtful design.
-        </p>
-      </div>
+      <SharedSectionHeader
+        title="Experience"
+        subtitle="Developing scalable web and mobile applications through clean code and thoughtful design."
+      />
 
       <div
         class="relative space-y-10 before:absolute before:inset-0 before:left-4 md:before:left-6 before:-translate-x-px before:h-full before:w-1 before:bg-linear-to-b before:from-primary-500 before:via-slate-200 dark:before:via-slate-800 before:to-transparent"
@@ -46,16 +37,13 @@
                 <div class="flex flex-wrap items-center gap-2 mt-2">
                   <span
                     class="text-lg font-bold text-primary-500 dark:text-primary-200"
-                    >Spacetoon</span
-                  >
+                  >Spacetoon</span>
                   <span
                     class="hidden md:inline text-slate-300 dark:text-slate-700"
-                    >|</span
-                  >
+                  >|</span>
                   <span
                     class="text-[10px] md:text-sm font-mono text-slate-400 uppercase tracking-widest"
-                    >+500 Employees</span
-                  >
+                  >+500 Employees</span>
                 </div>
               </div>
               <UBadge
@@ -152,7 +140,7 @@
                   'GraphQL',
                   'REST API',
                   'Nuxt.js',
-                  'GitLab',
+                  'GitLab'
                 ]"
                 :key="t"
                 class="px-3 py-1.5 md:px-4 md:py-2 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-[10px] md:text-[12px] uppercase tracking-widest text-slate-600 dark:text-slate-300 font-bold"
@@ -186,8 +174,7 @@
               </h3>
               <span
                 class="text-[10px] md:text-sm font-mono text-slate-400 tracking-[0.2em] font-bold"
-                >2023 — PRESENT</span
-              >
+              >2023 — PRESENT</span>
             </div>
             <p
               class="text-slate-700 dark:text-slate-400 text-sm md:text-[15px] leading-relaxed max-w-4xl mb-8"
@@ -203,7 +190,7 @@
                   'GetX',
                   'Firebase',
                   'Nuxt.js',
-                  'TypeScript',
+                  'TypeScript'
                 ]"
                 :key="t"
                 class="px-3 py-1.5 md:px-4 md:py-2 rounded-xl bg-primary-500/10 text-primary-600 dark:text-primary-400 text-[10px] md:text-[12px] uppercase tracking-widest border border-primary-500/20 font-bold"

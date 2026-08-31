@@ -2,7 +2,6 @@
   <footer class="border-t border-slate-200 dark:border-white/5 py-12">
     <UContainer>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center md:text-left">
-
         <div class="flex items-center justify-center md:justify-start gap-3">
           <SharedAppLogo
             class="h-10 w-10 text-primary-900 dark:text-primary-50"
@@ -15,7 +14,7 @@
         </div>
 
         <div class="flex justify-center md:justify-end gap-4">
-          <UTooltip text="Follow on LinkedIn" :shortcuts="['L']">
+          <UTooltip text="Follow on LinkedIn">
             <UButton
               to="https://www.linkedin.com/in/luna-marzouk-61004b200/"
               target="_blank"

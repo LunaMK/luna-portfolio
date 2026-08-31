@@ -1,25 +1,20 @@
 <template>
-  <section id="skills" class="py-24">
+  <section
+    id="skills"
+    class="py-16 sm:py-24"
+  >
     <UContainer>
-      <div class="mb-20">
-        <h2
-          class="text-4xl md:text-5xl font-black text-slate-800 dark:text-slate-100 uppercase tracking-tighter"
-        >
+      <SharedSectionHeader
+        title="Technical "
+        subtitle="A versatile skill set covering mobile, web, and backend development, with a strong foundation in software engineering and problem-solving."
+      >
+        <template #title>
           Technical <span class="text-primary-500 italic">Skills</span>
-        </h2>
-        <div
-          class="mt-2 h-2 w-32 bg-primary-500 underline decoration-wavy opacity-80"
-        ></div>
-        <p
-          class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-6 font-medium leading-relaxed max-w-2xl"
-        >
-          A versatile skill set covering mobile, web, and backend development,
-          with a strong foundation in software engineering and problem-solving.
-        </p>
-      </div>
+        </template>
+      </SharedSectionHeader>
 
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
       >
         <div
           class="group p-8 rounded-[2.5rem] border border-slate-200 dark:border-white/5 bg-slate-50/50 dark:bg-slate-900/40 hover:border-primary-500/30 transition-all duration-500"
@@ -28,7 +23,10 @@
             <div
               class="p-3 rounded-2xl bg-primary-500/10 text-primary-500 group-hover:scale-110 transition-transform"
             >
-              <UIcon name="i-lucide-layout" class="w-6 h-6" />
+              <UIcon
+                name="i-lucide-layout"
+                class="w-6 h-6"
+              />
             </div>
             <h3
               class="font-black uppercase tracking-widest text-slate-800 dark:text-slate-100"
@@ -44,7 +42,7 @@
                 'Nuxt.js',
                 'Vue.js',
                 'HTML/CSS',
-                'JS',
+                'JS'
               ]"
               :key="s"
               variant="subtle"
@@ -62,7 +60,10 @@
             <div
               class="p-3 rounded-2xl bg-primary-500/10 text-primary-500 group-hover:scale-110 transition-transform"
             >
-              <UIcon name="i-lucide-database" class="w-6 h-6" />
+              <UIcon
+                name="i-lucide-database"
+                class="w-6 h-6"
+              />
             </div>
             <h3
               class="font-black uppercase tracking-widest text-slate-800 dark:text-slate-100"
@@ -78,7 +79,7 @@
                 'MySQL',
                 'Firebase',
                 'REST API',
-                'GraphQL',
+                'GraphQL'
               ]"
               :key="s"
               variant="subtle"
@@ -96,7 +97,10 @@
             <div
               class="p-3 rounded-2xl bg-primary-500/10 text-primary-500 group-hover:scale-110 transition-transform"
             >
-              <UIcon name="i-lucide-brain-circuit" class="w-6 h-6" />
+              <UIcon
+                name="i-lucide-brain-circuit"
+                class="w-6 h-6"
+              />
             </div>
             <h3
               class="font-black uppercase tracking-widest text-slate-800 dark:text-slate-100"
@@ -110,7 +114,7 @@
                 'Machine Learning',
                 'NLP',
                 'System Design',
-                'Patterns',
+                'Patterns'
               ]"
               :key="s"
               variant="subtle"
@@ -128,7 +132,10 @@
             <div
               class="p-3 rounded-2xl bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400"
             >
-              <UIcon name="i-lucide-terminal" class="w-6 h-6" />
+              <UIcon
+                name="i-lucide-terminal"
+                class="w-6 h-6"
+              />
             </div>
             <h3
               class="font-black uppercase tracking-widest text-slate-800 dark:text-slate-100"
@@ -153,17 +160,20 @@
         >
           <div
             class="absolute -right-10 -top-10 w-48 h-48 bg-primary-500/15 blur-[80px] pointer-events-none"
-          ></div>
+          />
           <div
             class="absolute -left-10 -bottom-10 w-48 h-48 bg-primary-600/10 blur-[80px] pointer-events-none"
-          ></div>
+          />
 
           <div class="flex-1 space-y-10 relative z-10">
             <div class="flex items-center gap-4">
               <div
                 class="p-3 rounded-2xl bg-linear-to-tr from-primary-500 to-primary-600 text-white shadow-lg shadow-primary-500/25"
               >
-                <UIcon name="i-lucide-wrench" class="w-5 h-5" />
+                <UIcon
+                  name="i-lucide-wrench"
+                  class="w-5 h-5"
+                />
               </div>
               <h4
                 class="text-[11px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-500"
@@ -180,7 +190,7 @@
               >
                 <div
                   class="w-1.5 h-1.5 rounded-full bg-primary-500/40 group-hover/tool:bg-primary-500 group-hover/tool:scale-150 transition-all duration-300"
-                ></div>
+                />
                 <span
                   class="text-sm font-bold text-slate-600 dark:text-slate-400 group-hover/tool:text-primary-600 dark:group-hover/tool:text-primary-400 transition-colors"
                 >
@@ -192,17 +202,20 @@
 
           <div
             class="hidden md:block w-px bg-linear-to-b from-transparent via-primary-500/20 to-transparent self-stretch"
-          ></div>
+          />
 
           <div class="flex-1 space-y-10 relative z-10">
             <div class="flex items-center gap-4">
               <div
                 class="p-3 rounded-2xl bg-linear-to-tr from-primary-500 to-primary-600 text-white shadow-lg shadow-primary-500/25"
               >
-                <UIcon name="i-lucide-sparkles" class="w-5 h-5" />
+                <UIcon
+                  name="i-lucide-sparkles"
+                  class="w-5 h-5"
+                />
               </div>
               <h4
-            class="text-[11px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-500"
+                class="text-[11px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-500"
               >
                 Core Strengths
               </h4>
@@ -214,18 +227,18 @@
                   {
                     name: 'Team Collaboration',
                     level: 'w-[85%]',
-                    color: 'from-primary-500 to-primary-400',
+                    color: 'from-primary-500 to-primary-400'
                   },
                   {
                     name: 'Fast Learner',
                     level: 'w-[92%]',
-                    color: 'from-primary-600 to-primary-500',
+                    color: 'from-primary-600 to-primary-500'
                   },
                   {
                     name: 'Pressure Management',
                     level: 'w-[88%]',
-                    color: 'from-primary-500 to-primary-400',
-                  },
+                    color: 'from-primary-500 to-primary-400'
+                  }
                 ]"
                 :key="skill.name"
                 class="group/skill"
@@ -249,7 +262,7 @@
                   <div
                     :class="[skill.level, skill.color]"
                     class="h-full bg-linear-to-r rounded-full transition-all duration-1500 ease-out shadow-[0_0_12px_rgba(var(--color-primary-500),0.3)]"
-                  ></div>
+                  />
                 </div>
               </div>
             </div>

@@ -24,7 +24,8 @@
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
-            class="hover:text-primary-500 transition-all"
+            class="hover:text-primary-600 dark:hover:text-primary-300 transition-colors duration-200"
+            @click="smoothScroll(link.path)"
           >
             {{ link.label }}
           </NuxtLink>
@@ -68,8 +69,8 @@
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
-            class="text-lg font-medium p-2 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
-            @click="isOpen = false"
+            class="text-lg font-medium p-2 rounded-lg hover:bg-pink-50 dark:hover:bg-pink-500/10 hover:text-primary-600 dark:hover:text-pink-400 transition-colors"
+            @click="smoothScroll(link.path)"
           >
             {{ link.label }}
           </NuxtLink>
@@ -88,22 +89,34 @@
 </template>
 
 <script setup>
-const colorMode = useColorMode();
-const isOpen = ref(false);
+const colorMode = useColorMode()
+const isOpen = ref(false)
 
 const isDark = computed({
   get() {
-    return colorMode.value === "dark";
+    return colorMode.value === 'dark'
   },
   set() {
-    colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
-  },
-});
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  }
+})
 
 const navLinks = [
-  { label: "Home", path: "/" },
-  { label: "Experience", path: "#experience" },
-  { label: "Projects", path: "#projects" },
-  { label: "Education", path: "#education" },
-];
+  { label: 'Home', path: '/' },
+  { label: 'Experience', path: '#experience' },
+  { label: 'Projects', path: '#projects' },
+  { label: 'Education', path: '#education' }
+]
+
+function smoothScroll(path) {
+  isOpen.value = false
+  if (path === '/') {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
+  const el = document.querySelector(path)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 </script>

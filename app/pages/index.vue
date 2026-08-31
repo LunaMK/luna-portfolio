@@ -1,21 +1,20 @@
 <template>
-  <SectionsHero />
-  <SectionsSkills />
-  <SectionsExperiences />
-  <SectionsProjects />
-  <SectionsEducation/>
-  <SectionsContact/>
-
+  <main>
+    <SectionsHero />
+    <SectionsSkills />
+    <SectionsExperiences />
+    <SectionsProjects />
+    <SectionsEducation />
+    <SectionsContact />
+  </main>
 </template>
 
-
 <script setup lang="ts">
-import { useSeo } from "~/composables/useSeo";
+import { useSeo } from '~/composables/useSeo'
 
 useSeo({
-  title: "Luna Marzouk | Full Stack Developer",
+  title: 'Luna Marzouk | Full Stack Developer',
   description:
-    "Full Stack Developer specializing in Flutter, Nuxt.js, and Laravel.",
-});
+    'Full Stack Developer specializing in Flutter, Nuxt.js, and Laravel.'
+})
 </script>
-

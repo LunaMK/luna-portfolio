@@ -54,7 +54,7 @@
 @font-face {
   font-family: "Anurati";
   src: url("@/assets/fonts/Anurati-Regular.otf") format("opentype");
-  font-display: swap;
+  font-display: optional;
 }
 
 .logo-font {
@@ -68,7 +68,27 @@
    font-family: "Anurati", sans-serif !important;
 }
 html {
-  cursor: url('~/assets/images/logo.png'), auto;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+a,
+button,
+[role='button'],
+input,
+select,
+textarea,
+label,
+summary {
+  cursor: url('~/assets/images/logo.png'), pointer;
+}
+
+@media (pointer: coarse) {
+  a,
+  button,
+  [role='button'] {
+    cursor: default;
+  }
 }
 
 /* a, button, [role="button"], .cursor-pointer {

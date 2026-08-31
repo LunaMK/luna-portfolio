@@ -1,16 +1,18 @@
 <template>
-  <section id="education" class="py-24">
+  <section
+    id="education"
+    class="py-16 sm:py-24"
+  >
     <UContainer>
-      <div class="mb-16">
-        <h2
-          class="text-4xl md:text-5xl font-black text-slate-800 dark:text-slate-100 uppercase tracking-tighter"
-        >
+      <SharedSectionHeader>
+        <template #title>
           Academic & <span class="text-primary-500">Achievements</span>
-        </h2>
-        <div
-          class="mt-2 h-2 w-32 bg-primary-500 underline decoration-wavy opacity-80"
-        ></div>
-      </div>
+        </template>
+        <template #subtitle>
+          A strong academic foundation in software engineering, driven by
+          competitive programming and AI-focused research.
+        </template>
+      </SharedSectionHeader>
 
       <div
         class="relative space-y-12 before:absolute before:inset-0 before:left-4 md:before:left-6 before:-translate-x-px before:h-full before:w-1 before:bg-linear-to-b before:from-primary-500 before:via-slate-200 dark:before:via-slate-800 before:to-transparent"
@@ -52,13 +54,12 @@
                   variant="subtle"
                   class="rounded-xl uppercase tracking-widest px-4 py-2"
                 >
-                  GPA: 3.43 / 4.00 <br />
+                  GPA: 3.43 / 4.00 <br>
                   Graduated with Honors
                 </UBadge>
                 <span
                   class="text-[10px] md:text-xs font-mono text-slate-400 mt-2 uppercase tracking-widest font-bold"
-                  >10/2016 — 08/2021</span
-                >
+                >10/2016 — 08/2021</span>
               </div>
             </div>
 
@@ -69,12 +70,14 @@
                 <div
                   class="absolute top-0 right-0 p-2 opacity-10 group-hover/project:opacity-30 transition-opacity"
                 >
-                  <UIcon name="i-lucide-award" class="w-12 h-12" />
+                  <UIcon
+                    name="i-lucide-award"
+                    class="w-12 h-12"
+                  />
                 </div>
                 <span
                   class="text-[10px] font-black uppercase tracking-[0.2em] text-primary-500"
-                  >Senior Project</span
-                >
+                >Senior Project</span>
                 <h4
                   class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-1 uppercase italic"
                 >
@@ -97,8 +100,7 @@
               >
                 <span
                   class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400"
-                  >Junior Project</span
-                >
+                >Junior Project</span>
                 <h4
                   class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-1"
                 >
@@ -140,7 +142,10 @@
                 <div
                   class="h-10 w-10 shrink-0 rounded-lg bg-yellow-500/10 flex items-center justify-center border border-yellow-500/20"
                 >
-                  <UIcon name="i-lucide-zap" class="text-yellow-600 w-5 h-5" />
+                  <UIcon
+                    name="i-lucide-zap"
+                    class="text-yellow-600 w-5 h-5"
+                  />
                 </div>
                 <div>
                   <p

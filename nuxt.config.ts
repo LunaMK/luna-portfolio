@@ -1,65 +1,71 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@nuxt/image',
+    '@nuxthub/core'
+  ],
+  devtools: { enabled: false },
   app: {
     head: {
       htmlAttrs: {
-        lang: "en",
+        lang: 'en'
       },
       meta: [
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-      ],
-      link: [
-        { rel: "icon", href: "/favicon.ico" },
-        // { rel: 'icon', type: 'image/x-icon', href: process.env.BASE_URL + '/logo.png' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'referrer', content: 'strict-origin-when-cross-origin' },
+        { charset: 'utf-8' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'format-detection', content: 'telephone=no' },
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
-        },
+          'http-equiv': 'X-Content-Type-Options',
+          'content': 'nosniff'
+        }
       ],
-    },
-  },
-  modules: [
-    "@nuxt/eslint",
-    "@nuxt/ui",
-    "@nuxt/content",
-    "@nuxt/image",
-    "@nuxthub/core",
-  ],
-  colorMode: {
-    preference: "system",
-    fallback: "light",
-    classSuffix: "",
+      link: [{ rel: 'icon', href: '/favicon.ico' }],
+      style: [
+        {
+          innerHTML:
+            '#__nuxt{opacity:0}#app-loader{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:var(--loader-bg, #f7e9eb)}.dark #app-loader{--loader-bg:#210c40}html.revealed #__nuxt{opacity:1;transition:opacity .3s ease}html.revealed #app-loader{opacity:0;pointer-events:none;transition:opacity .3s ease}'
+        }
+      ],
+      script: [
+        {
+          innerHTML:
+            '(function(){var revealed=false;function r(){if(revealed)return;revealed=true;document.documentElement.classList.add(\'revealed\')}addEventListener(\'load\',r);addEventListener(\'DOMContentLoaded\',r);setTimeout(r,1200)})()',
+          tagPosition: 'head'
+        }
+      ]
+    }
   },
 
-  css: ["~/assets/css/main.css"],
+  css: ['~/assets/css/main.css'],
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: ''
+  },
 
   routeRules: {
-    "/": { prerender: true },
+    '/': {
+      prerender: true,
+      headers: {
+        'X-Frame-Options': 'SAMEORIGIN',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+        'X-Content-Type-Options': 'nosniff'
+      }
+    }
   },
 
-  compatibilityDate: "2025-01-15",
+  compatibilityDate: '2025-01-15',
 
   eslint: {
     config: {
       stylistic: {
-        commaDangle: "never",
-        braceStyle: "1tbs",
-      },
-    },
-  },
-  content: {
-    database: {
-      type: "d1",
-      bindingName: "DB",
-    },
-  },
-  hub: {
-    db: "sqlite",
-  },
-  nitro: {
-    experimental: {
-      database: true,
-    },
-  },
-});
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  }
+})
