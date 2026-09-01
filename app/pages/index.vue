@@ -6,8 +6,7 @@
     <SectionsProjects />
     <SectionsEducation />
     <SectionsContact />
-  </main>
-</template>
+  </main></template>
 
 <script setup lang="ts">
 import { useSeo } from '~/composables/useSeo'

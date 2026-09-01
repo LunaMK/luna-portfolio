@@ -10,7 +10,7 @@
       <div
         class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center"
       >
-        <div class="space-y-8 text-center lg:text-left">
+        <div v-reveal class="space-y-8 text-center lg:text-left">
           <div class="space-y-6">
             <UBadge
               variant="subtle"
@@ -74,6 +74,8 @@
         </div>
 
         <div
+          v-reveal="'right'"
+          :style="{ transitionDelay: '150ms' }"
           class="relative group hidden md:flex justify-center lg:justify-end items-end"
         >
           <div

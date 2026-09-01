@@ -8,7 +8,7 @@
     />
 
     <UContainer class="relative z-10 text-center">
-      <div class="mb-16">
+      <div v-reveal class="mb-16">
         <h2
           class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-800 dark:text-slate-100 uppercase tracking-tighter mb-4 leading-tight"
         >
@@ -26,7 +26,7 @@
         </p>
       </div>
 
-      <div class="flex flex-wrap justify-center gap-4 mb-20">
+      <div v-reveal :style="{ transitionDelay: '150ms' }" class="flex flex-wrap justify-center gap-4 mb-20">
         <UButton
           to="mailto:marzouk.luna@gmail.com"
           size="xl"

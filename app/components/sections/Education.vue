@@ -17,7 +17,7 @@
       <div
         class="relative space-y-12 before:absolute before:inset-0 before:left-4 md:before:left-6 before:-translate-x-px before:h-full before:w-1 before:bg-linear-to-b before:from-primary-500 before:via-slate-200 dark:before:via-slate-800 before:to-transparent"
       >
-        <div class="relative pl-10 md:pl-16 group">
+        <div class="relative pl-10 md:pl-16 group" v-reveal>
           <div
             class="absolute left-0 top-0 w-8 h-8 md:w-12 md:h-12 rounded-xl bg-primary-500 flex items-center justify-center z-10 shadow-lg transition-transform group-hover:scale-110"
           >
@@ -119,7 +119,7 @@
           </div>
         </div>
 
-        <div class="relative pl-10 md:pl-16 group">
+        <div class="relative pl-10 md:pl-16 group" v-reveal :style="{ transitionDelay: '150ms' }">
           <div
             class="absolute left-0 top-0 w-8 h-8 md:w-12 md:h-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center z-10 border border-slate-200 dark:border-slate-700"
           >

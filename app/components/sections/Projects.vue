@@ -15,6 +15,8 @@
         <div
           v-for="(project, index) in projects"
           :key="project.title"
+          v-reveal
+          :style="{ transitionDelay: `${Math.min(index * 80, 500)}ms` }"
           class="group relative flex flex-col bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-white/10 rounded-[2rem] overflow-hidden transition-all duration-500 hover:border-primary-500/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10"
         >
           <div

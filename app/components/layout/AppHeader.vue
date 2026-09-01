@@ -69,7 +69,7 @@
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
-            class="text-lg font-medium p-2 rounded-lg hover:bg-pink-50 dark:hover:bg-pink-500/10 hover:text-primary-600 dark:hover:text-pink-400 transition-colors"
+            class="text-lg font-medium p-2 rounded-lg hover:text-primary-600 dark:hover:text-primary-300 transition-colors duration-200"
             @click="smoothScroll(link.path)"
           >
             {{ link.label }}

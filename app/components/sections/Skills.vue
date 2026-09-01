@@ -17,6 +17,7 @@
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
       >
         <div
+          v-reveal
           class="group p-8 rounded-[2.5rem] border border-slate-200 dark:border-white/5 bg-slate-50/50 dark:bg-slate-900/40 hover:border-primary-500/30 transition-all duration-500"
         >
           <div class="flex items-center gap-4 mb-8">
@@ -54,6 +55,8 @@
         </div>
 
         <div
+          v-reveal
+          :style="{ transitionDelay: '100ms' }"
           class="group p-8 rounded-[2.5rem] border border-slate-200 dark:border-white/5 bg-slate-50/50 dark:bg-slate-900/40 hover:border-primary-500/30 transition-all duration-500"
         >
           <div class="flex items-center gap-4 mb-8">
@@ -91,6 +94,8 @@
         </div>
 
         <div
+          v-reveal
+          :style="{ transitionDelay: '200ms' }"
           class="group p-8 rounded-[2.5rem] border border-slate-200 dark:border-white/5 bg-slate-50/50 dark:bg-slate-900/40 hover:border-primary-500/30 transition-all duration-500"
         >
           <div class="flex items-center gap-4 mb-8">
@@ -126,6 +131,8 @@
         </div>
 
         <div
+          v-reveal
+          :style="{ transitionDelay: '300ms' }"
           class="md:col-span-2 lg:col-span-1 p-8 rounded-[2.5rem] border border-slate-200 dark:border-white/5 bg-slate-50/50 dark:bg-slate-900/40"
         >
           <div class="flex items-center gap-4 mb-8">
@@ -156,6 +163,8 @@
         </div>
 
         <div
+          v-reveal
+          :style="{ transitionDelay: '100ms' }"
           class="lg:col-span-2 p-10 rounded-[2.5rem] border border-primary-500/15 bg-linear-to-br from-primary-500/6 via-transparent to-primary-600/12 backdrop-blur-md flex flex-col md:flex-row gap-12 group/wide relative overflow-hidden"
         >
           <div
@@ -245,7 +254,7 @@
               >
                 <div class="flex justify-between items-center mb-3">
                   <span
-                    class="text-sm font-extrabold text-slate-700 dark:text-slate-200 group-hover/skill:text-primary-500 transition-colors tracking-tight"
+                    class="text-sm font-extrabold text-slate-700 dark:text-slate-200 group-hover/skill:text-primary-600 dark:group-hover/skill:text-primary-300 transition-colors tracking-tight"
                   >
                     {{ skill.name }}
                   </span>
